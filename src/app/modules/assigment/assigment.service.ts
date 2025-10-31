@@ -89,6 +89,7 @@ const getAllAssigments = async (params: any, options: IOption) => {
 };
 
 const getSingleAssigment = async (id: string) => {
+
   const result = await Assigment.findById(id).populate(
     'user',
     'firstName lastName email role profileImage',
