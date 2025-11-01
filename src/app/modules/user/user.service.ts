@@ -28,6 +28,7 @@ const getAllUser = async (params: any, options: IOption) => {
     'email',
     'role',
     'status',
+    'businessName'
   ];
 
   if (searchTerm) {
